@@ -15,7 +15,7 @@ class Topping(models.Model):
     """Pizza toppings"""
 
     pizza = models.ForeignKey(Pizza, on_delete=models.CASCADE)
-    name = models.CharField(max_length=20)
+    name = models.TextField()
 
     def __str__(self):
         """Return a string representation of the model."""
